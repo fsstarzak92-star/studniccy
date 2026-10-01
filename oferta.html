@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Oferta - Szkółka Roślin Studniccy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="bg-watermark"></div>
+
+    <header class="navbar">
+        <a href="index.html" class="logo">
+            <img src="zdjecia/logo.png" alt="Szkółka Studniccy">
+        </a>
+        <nav class="nav-links">
+            <a href="index.html">Strona Główna</a>
+            <a href="oferta.html" class="active">Oferta</a>
+            <a href="wysylka.html">Wysyłka</a>
+            <a href="kontakt.html">Kontakt</a>
+        </nav>
+    </header>
+
+    <section class="offer-section">
+        <h2>Nasza Oferta Roślin</h2>
+        <p class="offer-desc">Wybierz kategorię, aby wyświetlić pełną listę odmian:</p>
+
+        <div class="category-buttons">
+            <button class="category-btn active" onclick="showCategory('trawy')">Trawy Ozdobne (57)</button>
+            <button class="category-btn" onclick="showCategory('hortensje')">Hortensje (50)</button>
+        </div>
+
+        <div class="table-container">
+            <table class="offer-table" id="table-trawy">
+                <thead>
+                    <tr>
+                        <th>Nazwa polska</th>
+                        <th>Nazwa łacińska</th>
+                        <th>Odmiana</th>
+                        <th>Doniczka</th>
+                        <th>Cena (Allegro)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Imperata cylindryczna</td>
+                        <td><i>Imperata cylindrica</i></td>
+                        <td><strong>Red baron</strong></td>
+                        <td>3L</td>
+                        <td>19,00 zł</td>
+                    </tr>
+                    <tr>
+                        <td>Imperata cylindryczna</td>
+                        <td><i>Imperata cylindrica</i></td>
+                        <td><strong>Red baron</strong></td>
+                        <td>1,5L</td>
+                        <td>15,00 zł</td>
+                    </tr>
+                    <tr>
+                        <td>Kostrzewa Sina</td>
+                        <td><i>Festuca glauca</i></td>
+                        <td><strong>Eliah Blue</strong></td>
+                        <td>P12</td>
+                        <td>9,99 zł</td>
+                    </tr>
+                    <tr>
+                        <td>Miskant chiński</td>
+                        <td><i>Miscanthus sinensis</i></td>
+                        <td><strong>Flamingo</strong></td>
+                        <td>5L</td>
+                        <td>43,99 zł</td>
+                    </tr>
+                    <tr>
+                        <td>Miskant chiński</td>
+                        <td><i>Miscanthus sinensis</i></td>
+                        <td><strong>Giganteus</strong></td>
+                        <td>1,5L</td>
+                        <td>20,00 zł</td>
+                    </tr>
+                    <tr>
+                        <td>Miskant chiński</td>
+                        <td><i>Miscanthus sinensis</i></td>
+                        <td><strong>Giganteus</strong></td>
+                        <td>5L</td>
+                        <td>43,99 zł</td>
+                    </tr>
+                    <tr>
+                        <td>Miskant chiński</td>
+                        <td><i>Miscanthus sinensis</i></td>
+                        <td><strong>Gracillimus</strong></td>
+                        <td>1,5L/2L</td>
+                        <td>20,00 zł</td>
+                    </tr>
+                    <tr>
+                        <td>Miskant chiński</td>
+                        <td><i>Miscanthus sinensis</i></td>
+                        <td><strong>Gracillimus</strong></td>
+                        <td>5L</td>
+                        <td>39,99 zł</td>
+                    </tr>
+                    <tr>
+                        <td>Miskant chiński</td>
+                        <td><i>Miscanthus sinensis</i></td>
+                        <td><strong>Gracillimus Nana</strong></td>
+                        <td>1,5L</td>
+                        <td>23,99 zł</td>
+                    </tr>
+                    <tr>
+                        <td>Miskant chiński</td>
+                        <td><i>Miscanthus sinensis</i></td>
+                        <td><strong>Graziella</strong></td>
+                        <td>1,5L</td>
+                        <td>23,99 zł</td>
+                    </tr>
+                    <tr>
+                        <td>Miskant chiński</td>
+                        <td><i>Miscanthus sinensis</i></td>
+                        <td><strong>Hermann Müssel</strong></td>
+                        <td>5L</td>
+                        <td>43,99 zł</td>
+                    </tr>
+                    <tr>
+                        <td>Miskant chiński</td>
+                        <td><i>Miscanthus sinensis</i></td>
+                        <td><strong>Kleine Fontäne</strong></td>
+                        <td>1,5L</td>
+                        <td>14,99 zł</td>
+                    </tr>
+                    <tr>
+                        <td>Miskant chiński</td>
+                        <td><i>Miscanthus sinensis</i></td>
+                        <td><strong>Little zebra</strong></td>
+                        <td>5L</td>
+                        <td>45,00 zł</td>
+                    </tr>
+                    <tr>
+                        <td>Miskant chiński</td>
+                        <td><i>Miscanthus sinensis</i></td>
+                        <td><strong>Little zebra</strong></td>
+                        <td>2L</td>
+                        <td>25,00 zł</td>
+                    </tr>
+                    <tr>
+                        <td>Miskant chiński</td>
+                        <td><i>Miscanthus sinensis</i></td>
+                        <td><strong>Malepartus</strong></td>
+                        <td>1,5L</td>
+                        <td>18,00 zł</td>
+                    </tr>
+                    <tr>
+                        <td>Miskant chiński</td>
+                        <td><i>Miscanthus sinensis</i></td>
+                        <td><strong>Memory</strong></td>
+                        <td>1,5L</td>
+                        <td>18,99 zł</td>
+                    </tr>
+                    <tr>
+                        <td>Miskant chiński</td>
+                        <td><i>Miscanthus sinensis</i></td>
+                        <td><strong>Memory</strong></td>
+                        <td>5L</td>
+                        <td>39,99 zł</td>
+                    </tr>
+                    <tr>
+                        <td>Miskant chiński</td>
+                        <td><i>Miscanthus sinensis</i></td>
+                        <td><strong>Morning light</strong></td>
+                        <td>1,5L/2L</td>
+                        <td>20,00 zł</td>
+                    </tr>
+                    <tr>
+                        <td>Miskant chiński</td>
+                        <td><i>Miscanthus sinensis</i></td>
+                        <td><strong>Morning Light</strong></td>
+                        <td>5L</td>
+                        <td>38,99 zł</td>
+                    </tr>
+                    <tr>
+                        <td>Miskant chiński</td>
+                        <td><i>Miscanthus sinensis</i></td>
+                        <td><strong>Nippon</strong></td>
+                        <td>1,5L</td>
+                        <td>18,00 zł</td>
+                    </tr>
+                    <tr>
+                        <td>Miskant chiński</td>
+                        <td><i>Miscanthus sinensis</i></td>
+                        <td><strong>Red cloud</strong></td>
+                        <td>2L</td>
+                        <td>23,99 zł</td>
+                    </tr>
+                    <tr>
+                        <td>Miskant chiński</td>
+                        <td><i>Miscanthus sinensis</i></td>
+                        <td><strong>Vanilla sky</strong></td>
+                        <td>1,5L</td>
+                        <td>20,00 zł</td>
+                    </tr>
+                    <tr>
+                        <td>Miskant chiński</td>
+                        <td><i>Miscanthus sinensis</i></td>
+                        <td><strong>Zebrinus</strong></td>
+                        <td>2L</td>
+                        <td>20,00 zł</td>
+                    </tr>
+                    <tr>
+                        <td>Miskant chiński</td>
+                        <td><i>Miscanthus sinensis</i></td>
+                        <td><strong>Adagio</strong></td>
+                        <td>1,5L</td>
+                        <td>20,00 zł</td>
+                    </tr>
+                    <tr>
+                        <td>Miskant chiński</td>
+                        <td><i>Miscanthus sinensis</i></td>
+                        <td><strong>Ferner Osten</strong></td>
+                        <td>2L</td>
+                        <td>20,00 zł</td>
+                    </tr>
+                    <tr>
+                        <td>Miskant chiński</td>
+                        <td><i>Miscanthus sinensis</i></td>
+                        <td><strong>Ferner Osten</strong></td>
+                        <td>5L</td>
+                        <td>45,00 zł</td>
+                    </tr>
+                    <tr>
+                        <td>Miskant chiński</td>
+                        <td><i>Miscanthus sinensis</i></td>
+                        <td><strong>Flamingo</strong></td>
+                        <td>1,5L</td>
+                        <td>20,00 zł</td>
+                    </tr>
+                    <tr>
+                        <td>Miskant chiński</td>
+                        <td><i>Miscanthus sinensis</i></td>
+                        <td><strong>Hermann Müssel</strong></td>
+                        <td>1,5L</td>
+                        <td>20,00 zł</td>
+                    </tr>
+                    <tr>
+                        <td>Miskant chiński</td>
+                        <td><i>Miscanthus sinensis</i></td>
+                        <td><strong>Red Cloud</strong></td>
+                        <td>5L</td>
+                        <td>39,99 zł</td>
+                    </tr>
+                    <tr>
+                        <td>Miskant chiński</td>
+                        <td><i>Miscanthus sinensis</i></td>
+                        <td><strong>Strictus</strong></td>
+                        <td>2L</td>
+                        <td>20,00 zł</td>
+                    </tr>
+                    <tr>
+                        <td>Miskant chiński</td>
+                        <td><i>Miscanthus sinensis</i></td>
+                        <td><strong>Strictus</strong></td>
+                        <td>5L</td>
+                        <td>40,00 zł</td>
+                    </tr>
+                    <tr>
+                        <td>Miskant chiński</td>
+                        <td><i>Miscanthus sinensis</i></td>
+                        <td><strong>Variegatus</strong></td>
+                        <td>1,5L</td>
+                        <td>20,00 zł</td>
+                    </tr>
+                    <tr>
+                        <td>Miskant chiński</td>
+                        <td><i>Miscanthus sinensis</i></td>
+                        <td><strong>Yaku Jima</strong></td>
+                        <td>5L</td>
+                        <td>50,00 zł</td>
+                    </tr>
+                    <tr>
+                        <td>Miskant chiński</td>
+                        <td><i>Miscanthus sinensis</i></td>
+                        <td><strong>Giganteus</strong></td>
+                        <td>12L</td>
+                        <td>89,99 zł</td>
+                    </tr>
+                    <tr>
+                        <td>Miskant chiński</td>
+                        <td><i>Miscanthus sinensis</i></td>
+                        <td><strong>Graziella</strong></td>
+                        <td>5L</td>
+                        <td>45,99 zł</td>
+                    </tr>
+                    <tr>
+                        <td>Ostnica (Stipa)</td>
+                        <td><i>Stipa</i></td>
+                        <td><strong>Ponny Tails</strong></td>
+                        <td>P9</td>
+                        <td>12,00 zł</td>
+                    </tr>
+                    <tr>
+                        <td>Ostnica (Stipa)</td>
+                        <td><i>Stipa</i></td>
+                        <td><strong>Ponny Tails</strong></td>
+                        <td>2L</td>
+                        <td>20,00 zł</td>
+                    </tr>
+                    <tr>
+                        <td>Proso rózgowate</td>
+                        <td><i>Panicum virgatum</i></td>
+                        <td><strong>Northwind</strong></td>
+                        <td>2L</td>
+                        <td>24,99 zł</td>
+                    </tr>
+                    <tr>
+                        <td>Proso rózgowate</td>
+                        <td><i>Pannicum</i></td>
+                        <td><strong>Northwind</strong></td>
+                        <td>P12</td>
+                        <td>24,99 zł</td>
+                    </tr>
+                    <tr>
+                        <td>Rozplenica japońska</td>
+                        <td><i>Pennisetum alopecuroides</i></td>
+                        <td><strong>Big Boy</strong></td>
+                        <td>5L</td>
+                        <td>48,99 zł</td>
+                    </tr>
+                    <tr>
+                        <td>Rozplenica japońska</td>
+                        <td><i>Pennisetum alopecuroides</i></td>
+                        <td><strong>Black beauty</strong></td>
+                        <td>5L</td>
+                        <td>50,00 zł</td>
+                    </tr>
+                    <tr>
+                        <td>Rozplenica japońska</td>
+                        <td><i>Pennisetum alopecuroides</i></td>
+                        <td><strong>Cassian</strong></td>
+                        <td>1,5L</td>
+                        <td>20,00 zł</td>
+                    </tr>
+                    <tr>
+                        <td>Rozplenica japońska</td>
+                        <td><i>Pennisetum alopecuroides</i></td>
+                        <td><strong>Gelbstiel</strong></td>
+                        <td>1,5L</td>
+                        <td>18,00 zł</td>
+                    </tr>
+                    <tr>
+                        <td>Rozplenica japońska</td>
+                        <td><i>Pennisetum alopecuroides</i></td>
+                        <td><strong>Hameln</strong></td>
+                        <td>1,5L</td>
+                        <td>19,99 zł</td>
+                    </tr>
+                    <tr>
+                        <td>Rozplenica japońska</td>
+                        <td><i>Pennisetum alopecuroides</i></td>
+                        <td><strong>Little Bunny</strong></td>
+                        <td>1,5L</td>
+                        <td>19,99 zł</td>
+                    </tr>
+                    <tr>
+                        <td>Rozplenica japońska</td>
+                        <td><i>Pennisetum alopecuroides</i></td>
+                        <td><strong>Little Honey</strong></td>
+                        <td>1,5L</td>
+                        <td>18,00 zł</td>
+                    </tr>
+                    <tr>
+                        <td>Rozplenica japońska</td>
+                        <td><i>Pennisetum alopecuroides</i></td>
+                        <td><strong>Mirt Golden Hameln</strong></td>
+                        <td>1,5L</td>
+                        <td>18,00 zł</td>
+                    </tr>
+                    <tr>
+                        <td>Rozplenica japońska</td>
+                        <td><i>Pennisetum alopecuroides</i></td>
+                        <td><strong>Moudry</strong></td>
+                        <td>1,5L</td>
+                        <td>18,00 zł</td>
+                    </tr>
+                    <tr>
+                        <td>Rozplenica japońska</td>
+                        <td><i>Pennisetum alopecuroides</i></td>
+                        <td><strong>Red head</strong></td>
+                        <td>5L</td>
+                        <td>38,99 zł</td>
+                    </tr>
+                    <tr>
+                        <td>Rozplenica japońska</td>
+                        <td><i>Pennisetum alopecuroides</i></td>
+                        <td><strong>Red Head</strong></td>
+                        <td>1,5L</td>
+                        <td>19,99 zł</td>
+                    </tr>
+                    <tr>
+                        <td>Rozplenica japońska</td>
+                        <td><i>Pennisetum alopecuroides</i></td>
+                        <td><strong>Black beauty</strong></td>
+                        <td>1,5L</td>
+                        <td>20,00 zł</td>
+                    </tr>
+                    <tr>
+                        <td>Rozplenica japońska</td>
+                        <td><i>Pennisetum alopecuroides</i></td>
+                        <td><strong>Magic</strong></td>
+                        <td>1,5L</td>
+                        <td>18,00 zł</td>
+                    </tr>
+                    <tr>
+                        <td>Rozplenica japońska</td>
+                        <td><i>Pennisetum alopecuroides</i></td>
+                        <td><strong>Viridescens</strong></td>
+                        <td>1,5L</td>
+                        <td>18,00 zł</td>
+                    </tr>
+                    <tr>
+                        <td>Rozplenica japońska</td>
+                        <td><i>Pennisetum alopecuroides</i></td>
+                        <td><strong>Viridescens</strong></td>
+                        <td>5L</td>
+                        <td>46,99 zł</td>
+                    </tr>
+                    <tr>
+                        <td>Trawa pampasowa</td>
+                        <td><i>Cortaderia selloana</i></td>
+                        <td><strong>Pumila</strong></td>
+                        <td>2L</td>
+                        <td>59,99 zł</td>
+                    </tr>
+                    <tr>
+                        <td>Trawa Pampasowa</td>
+                        <td><i>Cortaderia selloana</i></td>
+                        <td><strong>Pumilia</strong></td>
+                        <td>15L</td>
+                        <td>120,00 zł</td>
+                    </tr>
+                    <tr>
+                        <td>Trawa Pampasowa</td>
+                        <td><i>Cortaderia</i></td>
+                        <td><strong>Evita</strong></td>
+                        <td>3L</td>
+                        <td>69,99 zł</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <table class="offer-table" id="table-hortensje" style="display: none;">
+                <thead>
+                    <tr>
+                        <th>Nazwa polska</th>
+                        <th>Nazwa łacińska</th>
+                        <th>Odmiana</th>
+                        <th>Doniczka</th>
+                        <th>Cena (Allegro)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Hortensja</td>
+                        <td><i>Hydrangea</i></td>
+                        <td><strong>Runaway Bride</strong></td>
+                        <td>2L</td>
+                        <td>119,99 zł</td>
+                    </tr>
+                    <tr>
+                        <td>Hortensja</td>
+                        <td><i>Hydrangea</i></td>
+                        <td><strong>Uciekająca Panna Młoda Runaway Bride</strong></td>
+                        <td>1,5L</td>
+                        <td>119,99 zł</td>
+                    </tr>
+                    <tr>
+                        <td>Hortensja bukietowa</td>
+                        <td><i>Hydrangea paniculata</i></td>
+                        <td><strong>Bloody Marie</strong></td>
+                        <td>5L</td>
+                        <td>159,99 zł</td>
+                    </tr>
+                    <tr>
+                        <td>Hortensja bukietowa</td>
+                        <td><i>Hydrangea paniculata</i></td>
+                        <td><strong>Bonfire</strong></td>
+                        <td>3L</td>
+                        <td>35,99 zł</td>
+                    </tr>
+                    <tr>
+                        <td>Hortensja bukietowa</td>
+                        <td><i>Hydrangea paniculata</i></td>
+                        <td><strong>Bonfire</strong></td>
+                        <td>5L</td>
+                        <td>49,99 zł</td>
+                    </tr>
+                    <tr>
+                        <td>Hortensja bukietowa</td>
+                        <td><i>Hydrangea paniculata</i></td>
+                        <td><strong>Diamant Rouge</strong></td>
+                        <td>5L</td>
+                        <td>49,99 zł</td>
+                    </tr>
+                    <tr>
+                        <td>Hortensja bukietowa</td>
+                        <td><i>Hydrangea paniculata</i></td>
+                        <td><strong>Diamantino</strong></td>
+                        <td>5L</td>
+                        <td>49,99 zł</td>
+                    </tr>
+                    <tr>
+                        <td>Hortensja bukietowa</td>
+                        <td><i>Hydrangea paniculata</i></td>
+                        <td><strong>Fraise Melba</strong></td>
+                        <td>3L</td>
+                        <td>35,99 zł</td>
+                    </tr>
+                    <tr>
+                        <td>Hortensja bukietowa</td>
+                        <td><i>Hydrangea paniculata</i></td>
+                        <td><strong>Framboisine Rensam</strong></td>
+                        <td>P8</td>
+                        <td>35,99 zł</td>
+                    </tr>
+                    <tr>
+                        <td>Hortensja bukietowa</td>
+                        <td><i>Hydrangea paniculata</i></td>
+                        <td><strong>Ground Breaker</strong></td>
+                        <td>1l</td>
+                        <td>69,99 zł</td>
+                    </tr>
+                    <tr>
+                        <td>Hortensja Bukietowa</td>
+                        <td><i>Hydrangea paniculata</i></td>
+                        <td><strong>Hercules</strong></td>
+                        <td>5L</td>
+                        <td>49,99 zł</td>
+                    </tr>
+                    <tr>
+                        <td>Hortensja bukietowa</td>
+                        <td><i>Hydrangea paniculata</i></td>
+                        <td><strong>Limelight</strong></td>
+                        <td>2L</td>
+                        <td>23,99 zł</td>
+                    </tr>
+                    <tr>
+                        <td>Hortensja bukietowa</td>
+                        <td><i>Hydrangea paniculata</i></td>
+                        <td><strong>Limelight</strong></td>
+                        <td>P9</td>
+                        <td>29,99 zł</td>
+                    </tr>
+                    <tr>
+                        <td>Hortensja Bukietowa</td>
+                        <td><i>Hydrangea paniculata</i></td>
+                        <td><strong>Limelight</strong></td>
+                        <td>P12</td>
+                        <td>17,99 zł</td>
+                    </tr>
+                    <tr>
+                        <td>Hortensja bukietowa</td>
+                        <td><i>Hydrangea paniculata</i></td>
+                        <td><strong>Little lime punch</strong></td>
+                        <td>5L</td>
+                        <td>79,99 zł</td>
+                    </tr>
+                    <tr>
+                        <td>Hortensja bukietowa</td>
+                        <td><i>Hydrangea paniculata</i></td>
+                        <td><strong>Little Spooky</strong></td>
+                        <td>5L</td>
+                        <td>49,99 zł</td>
+                    </tr>
+                    <tr>
+                        <td>Hortensja Bukietowa</td>
+                        <td><i>Hydrangea paniculata</i></td>
+                        <td><strong>Little Spooky</strong></td>
+                        <td>P12</td>
+                        <td>17,99 zł</td>
+                    </tr>
+                    <tr>
+                        <td>Hortensja bukietowa</td>
+                        <td><i>Hydrangea paniculata</i></td>
+                        <td><strong>Living Cotton Cream</strong></td>
+                        <td>2L</td>
+                        <td>45,99 zł</td>
+                    </tr>
+                    <tr>
+                        <td>Hortensja bukietowa</td>
+                        <td><i>Hydrangea paniculata</i></td>
+                        <td><strong>Living Pinky Promise</strong></td>
+                        <td>2L</td>
+                        <td>45,99 zł</td>
+                    </tr>
+                    <tr>
+                        <td>Hortensja bukietowa</td>
+                        <td><i>Hydrangea paniculata</i></td>
+                        <td><strong>Living Royal Flower</strong></td>
+                        <td>2L</td>
+                        <td>45,99 zł</td>
+                    </tr>
+                    <tr>
+                        <td>Hortensja bukietowa</td>
+                        <td><i>Hydrangea paniculata</i></td>
+                        <td><strong>Magical Mont Blanc</strong></td>
+                        <td>3L</td>
+                        <td>35,99 zł</td>
+                    </tr>
+                    <tr>
+                        <td>Hortensja bukietowa</td>
+                        <td><i>Hydrangea paniculata</i></td>
+                        <td><strong>Metallica Renmeta</strong></td>
+                        <td>P8</td>
+                        <td>35,99 zł</td>
+                    </tr>
+                    <tr>
+                        <td>Hortensja bukietowa</td>
+                        <td><i>Hydrangea paniculata</i></td>
+                        <td><strong>Mohito</strong></td>
+                        <td>5L</td>
+                        <td>49,99 zł</td>
+                    </tr>
+                    <tr>
+                        <td>Hortensja bukietowa</td>
+                        <td><i>Hydrangea paniculata</i></td>
+                        <td><strong>Mojito</strong></td>
+                        <td>P9</td>
+                        <td>29,99 zł</td>
+                    </tr>
+                    <tr>
+                        <td>Hortensja bukietowa</td>
+                        <td><i>Hydrangea paniculata</i></td>
+                        <td><strong>Mojito</strong></td>
+                        <td>5L</td>
+                        <td>49,99 zł</td>
+                    </tr>
+                    <tr>
+                        <td>Hortensja bukietowa</td>
+                        <td><i>Hydrangea paniculata</i></td>
+                        <td><strong>Petit Star</strong></td>
+                        <td>5L</td>
+                        <td>49,99 zł</td>
+                    </tr>
+                    <tr>
+                        <td>Hortensja Bukietowa</td>
+                        <td><i>Hydrangea paniculata</i></td>
+                        <td><strong>Phantom</strong></td>
+                        <td>P12</td>
+                        <td>17,99 zł</td>
+                    </tr>
+                    <tr>
+                        <td>Hortensja bukietowa</td>
+                        <td><i>Hydrangea paniculata</i></td>
+                        <td><strong>Pink and Rose</strong></td>
+                        <td>P9</td>
+                        <td>29,99 zł</td>
+                    </tr>
+                    <tr>
+                        <td>Hortensja bukietowa</td>
+                        <td><i>Hydrangea paniculata</i></td>
+                        <td><strong>Pixio</strong></td>
+                        <td>3L</td>
+                        <td>35,99 zł</td>
+                    </tr>
+                    <tr>
+                        <td>Hortensja bukietowa</td>
+                        <td><i>Hydrangea paniculata</i></td>
+                        <td><strong>Pixio</strong></td>
+                        <td>5L</td>
+                        <td>49,99 zł</td>
+                    </tr>
+                    <tr>
+                        <td>Hortensja bukietowa</td>
+                        <td><i>Hydrangea paniculata</i></td>
+                        <td><strong>Polar Bear</strong></td>
+                        <td>2L</td>
+                        <td>29,99 zł</td>
+                    </tr>
+                    <tr>
+                        <td>Hortensja bukietowa</td>
+                        <td><i>Hydrangea paniculata</i></td>
+                        <td><strong>Skyfall</strong></td>
+                        <td>P9</td>
+                        <td>29,99 zł</td>
+                    </tr>
+                    <tr>
+                        <td>Hortensja Bukietowa</td>
+                        <td><i>Hydrangea paniculata</i></td>
+                        <td><strong>Skyfall</strong></td>
+                        <td>P12</td>
+                        <td>17,99 zł</td>
+                    </tr>
+                    <tr>
+                        <td>Hortensja bukietowa</td>
+                        <td><i>Hydrangea paniculata</i></td>
+                        <td><strong>Vanille Fraise</strong></td>
+                        <td>3L</td>
+                        <td>35,99 zł</td>
+                    </tr>
+                    <tr>
+                        <td>Hortensja Bukietowa</td>
+                        <td><i>Hydrangea paniculata</i></td>
+                        <td><strong>Vanille Fraise</strong></td>
+                        <td>P12</td>
+                        <td>17,99 zł</td>
+                    </tr>
+                    <tr>
+                        <td>Hortensja bukietowa</td>
+                        <td><i>Hydrangea paniculata</i></td>
+                        <td><strong>Whitelight</strong></td>
+                        <td>1,5L</td>
+                        <td>69,99 zł</td>
+                    </tr>
+                    <tr>
+                        <td>Hortensja Bukietowa na nodze</td>
+                        <td><i>Hydrangea paniculata</i></td>
+                        <td><strong>Skyfall</strong></td>
+                        <td>5L</td>
+                        <td>129,99 zł</td>
+                    </tr>
+                    <tr>
+                        <td>Hortensja dębolistna</td>
+                        <td><i>Hydrangea quercifolia</i></td>
+                        <td><strong>Tara</strong></td>
+                        <td>3L</td>
+                        <td>79,99 zł</td>
+                    </tr>
+                    <tr>
+                        <td>Hortensja Dębolistna</td>
+                        <td><i>Hydrangea quercifolia</i></td>
+                        <td><strong>Rubby Slippers</strong></td>
+                        <td>2L</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>Hortensja Dębolistna</td>
+                        <td><i>Hydrangea quercifolia</i></td>
+                        <td><strong>Tara</strong></td>
+                        <td>2L</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>Hortensja drzewiasta</td>
+                        <td><i>Hydrangea arborescens</i></td>
+                        <td><strong>Beauty Bell White</strong></td>
+                        <td>2,5L</td>
+                        <td>119,99 zł</td>
+                    </tr>
+                    <tr>
+                        <td>Hortensja drzewiasta</td>
+                        <td><i>Hydrangea arborescens</i></td>
+                        <td><strong>Magical Dark Pink</strong></td>
+                        <td>5L</td>
+                        <td>119,99 zł</td>
+                    </tr>
+                    <tr>
+                        <td>Hortensja bukietowa</td>
+                        <td><i>Hydrangea paniculata</i></td>
+                        <td><strong>Vanille Fraise</strong></td>
+                        <td>2L</td>
+                        <td>23,99 zł</td>
+                    </tr>
+                    <tr>
+                        <td>Hortensja bukietowa</td>
+                        <td><i>Hydrangea paniculata</i></td>
+                        <td><strong>Red Velvet</strong></td>
+                        <td>2L</td>
+                        <td>23,99 zł</td>
+                    </tr>
+                    <tr>
+                        <td>Hortensja bukietowa</td>
+                        <td><i>Hydrangea paniculata</i></td>
+                        <td><strong>Living Cotton Cream</strong></td>
+                        <td>2L</td>
+                        <td>23,99 zł</td>
+                    </tr>
+                    <tr>
+                        <td>Hortensja bukietowa</td>
+                        <td><i>Hydrangea paniculata</i></td>
+                        <td><strong>Phantom</strong></td>
+                        <td>2L</td>
+                        <td>23,99 zł</td>
+                    </tr>
+                    <tr>
+                        <td>Hortensja bukietowa</td>
+                        <td><i>Hydrangea paniculata</i></td>
+                        <td><strong>Living Little Blossom</strong></td>
+                        <td>2L</td>
+                        <td>23,99 zł</td>
+                    </tr>
+                    <tr>
+                        <td>Hortensja bukietowa</td>
+                        <td><i>Hydrangea paniculata</i></td>
+                        <td><strong>Living Colorful Coctail</strong></td>
+                        <td>2L</td>
+                        <td>23,99 zł</td>
+                    </tr>
+                    <tr>
+                        <td>Hortensja bukietowa</td>
+                        <td><i>Hydrangea paniculata</i></td>
+                        <td><strong>Living Cotton Cream</strong></td>
+                        <td>2L</td>
+                        <td>23,99 zł</td>
+                    </tr>
+                    <tr>
+                        <td>Hortensja bukietowa</td>
+                        <td><i>Hydrangea paniculata</i></td>
+                        <td><strong>Living Little Rosy</strong></td>
+                        <td>2L</td>
+                        <td>23,99 zł</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2026 Gospodarstwo Szkółkarskie Studniccy. Wszelkie prawa zastrzeżone.</p>
+    </footer>
+
+    <script>
+        function showCategory(category) {
+            document.getElementById('table-trawy').style.display = 'none';
+            document.getElementById('table-hortensje').style.display = 'none';
+            document.getElementById('table-' + category).style.display = 'table';
+
+            const buttons = document.querySelectorAll('.category-btn');
+            buttons.forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+        }
+    </script>
+
+</body>
+
+</html>
