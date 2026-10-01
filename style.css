@@ -32,7 +32,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 800px; 
+    width: 800px;
     height: 800px;
     background-image: url('zdjecia/logotlo.png');
     background-repeat: no-repeat;
@@ -49,7 +49,7 @@ body {
     padding: 14px 20px;
     display: flex;
     justify-content: space-between;
-    align-items: center; 
+    align-items: center;
     top: 0;
     z-index: 1000;
     box-shadow: var(--shadow-sm);
@@ -58,7 +58,7 @@ body {
 
 .logo {
     display: flex;
-    align-items: center; 
+    align-items: center;
     text-decoration: none;
     font-size: 18px;
     font-weight: 800;
@@ -67,7 +67,7 @@ body {
 }
 
 .logo img {
-    height: 40px; 
+    height: 40px;
     width: auto;
     display: block;
 }
@@ -123,7 +123,13 @@ body {
     border: none;
 }
 
-.about-section, .shipping-section, .gallery-section, .info-section, .offer-section, .map-section, .company-photo-section {
+.about-section,
+.shipping-section,
+.gallery-section,
+.info-section,
+.offer-section,
+.map-section,
+.company-photo-section {
     max-width: 1000px;
     margin: 40px auto;
     padding: 0 20px;
@@ -152,18 +158,22 @@ body {
     height: 100%;
     max-height: 320px;
     object-fit: cover;
-    object-position: center; 
+    object-position: center;
     display: block;
     border-radius: 8px;
 }
 
-.about-content, .about-text {
+.about-content,
+.about-text {
     flex: 1;
     display: flex;
     flex-direction: column;
 }
 
-.about-content h2, .about-text h2, .gallery-section h2, .offer-section h2 {
+.about-content h2,
+.about-text h2,
+.gallery-section h2,
+.offer-section h2 {
     color: var(--primary-color);
     font-size: 24px;
     margin-bottom: 12px;
@@ -258,7 +268,8 @@ body {
     margin-top: 30px;
 }
 
-.piorin-box, .note-box {
+.piorin-box,
+.note-box {
     background: var(--card-bg);
     padding: 22px 24px;
     border-radius: var(--border-radius);
@@ -266,13 +277,15 @@ body {
     border: 1px solid #E5EBE5;
 }
 
-.piorin-box h4, .note-box h4 {
+.piorin-box h4,
+.note-box h4 {
     margin: 0 0 8px 0;
     font-size: 15px;
     color: var(--text-color);
 }
 
-.piorin-box p, .note-box p {
+.piorin-box p,
+.note-box p {
     margin: 0;
     font-size: 13.5px;
     color: var(--text-muted);
@@ -289,7 +302,7 @@ body {
     display: block;
     position: relative;
     width: 100%;
-    aspect-ratio: 4 / 3; 
+    aspect-ratio: 4 / 3;
     overflow: hidden;
     border-radius: var(--border-radius);
     box-shadow: var(--shadow-sm);
@@ -300,9 +313,9 @@ body {
 .gallery-grid a[data-fancybox] img {
     width: 100%;
     height: 100%;
-    object-fit: cover; 
+    object-fit: cover;
     display: block;
-    border-radius: 0; 
+    border-radius: 0;
     transition: transform 0.3s ease, filter 0.3s ease;
 }
 
@@ -516,8 +529,10 @@ body {
         max-height: 280px;
     }
 
-    .about-grid, .shipping-grid, .shipping-footer-grid, .info-grid {
+    .about-grid,
+    .shipping-grid,
+    .shipping-footer-grid,
+    .info-grid {
         grid-template-columns: 1fr;
     }
 }
-
