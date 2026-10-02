@@ -528,7 +528,7 @@ body {
     }
 
     .nav-links {
-       flex-wrap: wrap;
+        flex-wrap: wrap;
         justify-content: center;
         gap: 6px;
         width: 100%;
@@ -552,12 +552,12 @@ body {
         max-height: 280px;
     }
 
-    .about-section, 
-    .shipping-section, 
-    .gallery-section, 
-    .info-section, 
-    .offer-section, 
-    .map-section, 
+    .about-section,
+    .shipping-section,
+    .gallery-section,
+    .info-section,
+    .offer-section,
+    .map-section,
     .company-photo-section,
     .allegro-section {
         margin: 20px auto;
