@@ -518,10 +518,33 @@ body {
     font-size: 13px;
 }
 
-@media (max-width: 850px) {
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+        padding: 12px 16px;
+    }
+
+    .nav-links {
+       flex-wrap: wrap;
+        justify-content: center;
+        gap: 6px;
+        width: 100%;
+    }
+
+    .about-grid,
+    .shipping-grid,
+    .shipping-footer-grid,
+    .info-grid,
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
     .about-card-wrapper {
         flex-direction: column;
-        padding: 20px;
+        gap: 20px;
     }
 
     .about-image {
@@ -529,10 +552,20 @@ body {
         max-height: 280px;
     }
 
-    .about-grid,
-    .shipping-grid,
-    .shipping-footer-grid,
-    .info-grid {
-        grid-template-columns: 1fr;
+    .about-section, 
+    .shipping-section, 
+    .gallery-section, 
+    .info-section, 
+    .offer-section, 
+    .map-section, 
+    .company-photo-section,
+    .allegro-section {
+        margin: 20px auto;
+        padding: 0 16px;
     }
+
+    .table-container {
+        overflow-x: auto;
+    }
+
 }
