@@ -518,54 +518,40 @@ body {
     font-size: 13px;
 }
 
-@media (max-width: 768px) {
-
+/* Wklej na samym dole pliku style.css */
+@media (max-width: 850px) {
     .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 12px;
-        padding: 12px 16px;
+        flex-direction: column !important;
+        gap: 15px !important;
+        padding: 15px !important;
     }
 
     .nav-links {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 6px;
-        width: 100%;
+        flex-direction: column !important;
+        width: 100% !important;
+        gap: 8px !important;
     }
 
-    .about-grid,
+    .nav-links a {
+        width: 100% !important;
+        text-align: center !important;
+    }
+
+    .about-grid {
+        grid-template-columns: 1fr !important;
+    }
+
+    .gallery-grid {
+        grid-template-columns: 1fr !important;
+    }
+
     .shipping-grid,
     .shipping-footer-grid,
-    .info-grid,
-    .gallery-grid {
-        grid-template-columns: 1fr;
+    .info-grid {
+        grid-template-columns: 1fr !important;
     }
 
     .about-card-wrapper {
-        flex-direction: column;
-        gap: 20px;
+        flex-direction: column !important;
     }
-
-    .about-image {
-        width: 100%;
-        max-height: 280px;
-    }
-
-    .about-section,
-    .shipping-section,
-    .gallery-section,
-    .info-section,
-    .offer-section,
-    .map-section,
-    .company-photo-section,
-    .allegro-section {
-        margin: 20px auto;
-        padding: 0 16px;
-    }
-
-    .table-container {
-        overflow-x: auto;
-    }
-
 }
