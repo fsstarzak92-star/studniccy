@@ -14,16 +14,23 @@
     <div class="bg-watermark"></div>
 
     <header class="navbar">
-        <a href="index.html" class="logo">
-            <img src="zdjecia/logo.png" alt="Szkółka Studniccy">
-        </a>
-        <nav class="nav-links">
-            <a href="index.html">Strona Główna</a>
-            <a href="oferta.html" class="active">Oferta</a>
-            <a href="wysylka.html">Wysyłka</a>
-            <a href="kontakt.html">Kontakt</a>
-        </nav>
-    </header>
+    <a href="index.html" class="logo">
+        <img src="zdjecia/logo.png" alt="Szkółka Studniccy">
+    </a>
+
+    <button class="burger-menu" id="burgerBtn" aria-label="Otwórz menu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <nav class="nav-links" id="navLinks">
+        <a href="index.html">Strona Główna</a>
+        <a href="oferta.html" class="active">Oferta</a>
+        <a href="wysylka.html">Wysyłka</a>
+        <a href="kontakt.html">Kontakt</a>
+    </nav>
+</header>
 
     <section class="offer-section">
         <h2>Nasza Oferta Roślin</h2>
@@ -829,6 +836,21 @@
             event.target.classList.add('active');
         }
     </script>
+
+    <script>
+    const burgerBtn = document.getElementById('burgerBtn');
+    const navLinks = document.getElementById('navLinks');
+
+    burgerBtn.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+    });
+
+    document.querySelectorAll('.nav-links a').forEach(link => {
+        link.addEventListener('click', () => {
+            navLinks.classList.remove('active');
+        });
+    });
+</script>
 
 </body>
 
