@@ -24,8 +24,21 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    position: relative;
+    position: static !important;
     top: 0px !important;
+}
+
+/* Ukrycie paska i elementów Google Translate */
+.goog-te-banner-frame,
+.goog-te-banner,
+.skiptranslate,
+#google_translate_element {
+    display: none !important;
+}
+
+.goog-text-highlight {
+    background-color: transparent !important;
+    box-shadow: none !important;
 }
 
 .bg-watermark {
@@ -127,36 +140,39 @@ body {
     background-color: var(--primary-color);
 }
 
-/* Widżet Google Translate */
-#google_translate_element {
-    display: inline-block !important;
-    margin-left: 5px;
+/* Przełącznik języków PL / EN */
+.lang-switch {
+    display: flex;
+    align-items: center;
+    background-color: #EBF4EC;
+    padding: 3px;
+    border-radius: 20px;
+    margin-left: 12px;
+    gap: 2px;
 }
 
-.goog-te-gadget {
-    font-size: 0px !important;
-    color: transparent !important;
-}
-
-.goog-te-gadget .goog-te-combo {
-    padding: 6px 10px;
-    border-radius: 8px;
-    border: 1px solid var(--primary-color);
-    color: var(--text-color);
-    background-color: var(--card-bg);
-    font-size: 13px;
-    font-weight: 600;
-    cursor: pointer;
+.lang-btn {
+    background: transparent;
+    border: none;
     outline: none;
+    color: var(--text-muted);
+    font-size: 12px;
+    font-weight: 700;
+    padding: 5px 11px;
+    border-radius: 16px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    line-height: 1;
 }
 
-.goog-te-combo:hover {
-    background-color: #EBF4EC !important;
-    border-color: var(--primary-hover) !important;
+.lang-btn:hover {
+    color: var(--primary-color);
 }
 
-.goog-te-banner-frame.skiptranslate {
-    display: none !important;
+.lang-btn.active {
+    background-color: var(--primary-color);
+    color: #FFFFFF;
+    box-shadow: 0 2px 6px rgba(112, 176, 114, 0.3);
 }
 
 .hero-video {
@@ -617,7 +633,7 @@ body {
         padding: 12px 0 !important;
     }
 
-    #google_translate_element {
+    .lang-switch {
         margin: 10px 0 0 0 !important;
     }
 

@@ -14,23 +14,30 @@
     <div class="bg-watermark"></div>
 
     <header class="navbar">
-    <a href="index.html" class="logo">
-        <img src="zdjecia/logo.png" alt="Szkółka Studniccy">
-    </a>
+        <a href="index.html" class="logo">
+            <img src="zdjecia/logo.png" alt="Szkółka Studniccy">
+        </a>
 
-    <button class="burger-menu" id="burgerBtn" aria-label="Otwórz menu">
-        <span></span>
-        <span></span>
-        <span></span>
-    </button>
+        <nav class="nav-links" id="nav-links">
+            <a href="index.html">Strona Główna</a>
+            <a href="oferta.html">Oferta</a>
+            <a href="wysylka.html" class="active">Wysyłka</a>
+            <a href="kontakt.html">Kontakt</a>
+            <div class="lang-switch notranslate">
+    <button type="button" class="lang-btn active notranslate" id="btn-pl" onclick="changeLanguage('pl')">PL</button>
+    <button type="button" class="lang-btn notranslate" id="btn-en" onclick="changeLanguage('en')">EN</button>
+</div>
+            <div id="google_translate_element" style="display:none !important;"></div>
+        </nav>
 
-    <nav class="nav-links" id="navLinks">
-        <a href="index.html">Strona Główna</a>
-        <a href="oferta.html">Oferta</a>
-        <a href="wysylka.html" class="active">Wysyłka</a>
-        <a href="kontakt.html">Kontakt</a>
-    </nav>
-</header>
+        <div class="nav-right">
+            <button class="burger-menu" id="burger-btn" aria-label="Otwórz menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
 
     <main class="shipping-section">
         <div class="about-card-wrapper">
@@ -100,19 +107,43 @@
     </footer>
 
     <script>
-    const burgerBtn = document.getElementById('burgerBtn');
-    const navLinks = document.getElementById('navLinks');
+        // 1. Obsługa menu burgera
+        const burgerBtn = document.getElementById('burger-btn');
+        const navLinks = document.getElementById('nav-links');
 
-    burgerBtn.addEventListener('click', () => {
-        navLinks.classList.toggle('active');
-    });
+        if (burgerBtn && navLinks) {
+            burgerBtn.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+            });
 
-    document.querySelectorAll('.nav-links a').forEach(link => {
-        link.addEventListener('click', () => {
-            navLinks.classList.remove('active');
-        });
-    });
-</script>
+            document.querySelectorAll('.nav-links a').forEach(link => {
+                link.addEventListener('click', () => {
+                    navLinks.classList.remove('active');
+                });
+            });
+        }
+
+        // 2. Obsługa Google Translate i przycisków PL / EN
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'pl',
+                includedLanguages: 'en,pl',
+                autoDisplay: false
+            }, 'google_translate_element');
+        }
+
+        function changeLanguage(langCode) {
+            const select = document.querySelector('.goog-te-combo');
+            if (select) {
+                select.value = langCode;
+                select.dispatchEvent(new Event('change'));
+
+                document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
+                document.getElementById('btn-' + langCode).classList.add('active');
+            }
+        }
+    </script>
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
 </body>
 

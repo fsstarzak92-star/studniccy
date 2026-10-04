@@ -24,7 +24,11 @@
             <a href="oferta.html">Oferta</a>
             <a href="wysylka.html">Wysyłka</a>
             <a href="kontakt.html">Kontakt</a>
-            <div id="google_translate_element"></div>
+            <div class="lang-switch notranslate">
+    <button type="button" class="lang-btn active notranslate" id="btn-pl" onclick="changeLanguage('pl')">PL</button>
+    <button type="button" class="lang-btn notranslate" id="btn-en" onclick="changeLanguage('en')">EN</button>
+</div>
+            <div id="google_translate_element" style="display:none !important;"></div>
         </nav>
 
         <div class="nav-right">
@@ -144,12 +148,23 @@
         function googleTranslateElementInit() {
             new google.translate.TranslateElement({
                 pageLanguage: 'pl',
-                includedLanguages: 'en,pl'
+                includedLanguages: 'en,pl',
+                autoDisplay: false
             }, 'google_translate_element');
         }
-    </script>
-    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
+        function changeLanguage(langCode) {
+            const select = document.querySelector('.goog-te-combo');
+            if (select) {
+                select.value = langCode;
+                select.dispatchEvent(new Event('change'));
+                
+                document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
+                document.getElementById('btn-' + langCode).classList.add('active');
+            }
+        }
+    </script>
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </body>
 
 </html>

@@ -1,76 +1,82 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
     <title>Kontakt - Szkółka Roślin Studniccy</title>
     <link rel="stylesheet" href="style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="zdjecia/logomini.png">
 </head>
+
 <body>
 
     <div class="bg-watermark"></div>
 
-   <header class="navbar">
-    <a href="index.html" class="logo">
-        <img src="zdjecia/logo.png" alt="Szkółka Studniccy">
-    </a>
+    <header class="navbar">
+        <a href="index.html" class="logo">
+            <img src="zdjecia/logo.png" alt="Szkółka Studniccy">
+        </a>
 
-    <button class="burger-menu" id="burgerBtn" aria-label="Otwórz menu">
-        <span></span>
-        <span></span>
-        <span></span>
-    </button>
+        <nav class="nav-links" id="nav-links">
+            <a href="index.html">Strona Główna</a>
+            <a href="oferta.html">Oferta</a>
+            <a href="wysylka.html">Wysyłka</a>
+            <a href="kontakt.html" class="active">Kontakt</a>
+            <div class="lang-switch notranslate">
+    <button type="button" class="lang-btn active notranslate" id="btn-pl" onclick="changeLanguage('pl')">PL</button>
+    <button type="button" class="lang-btn notranslate" id="btn-en" onclick="changeLanguage('en')">EN</button>
+</div>
+            <div id="google_translate_element" style="display:none !important;"></div>
+        </nav>
 
-    <nav class="nav-links" id="navLinks">
-        <a href="index.html">Strona Główna</a>
-        <a href="oferta.html">Oferta</a>
-        <a href="wysylka.html">Wysyłka</a>
-        <a href="kontakt.html" class="active">Kontakt</a>
-    </nav>
-</header>
+        <div class="nav-right">
+            <button class="burger-menu" id="burger-btn" aria-label="Otwórz menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
 
     <section class="map-section">
         <div class="map-container">
-            <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2538.0772718160456!2d16.8223629!3d50.6136682!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470e253109110d3d%3A0x4921ec39b0c9847c!2sStudniccy%20Szk%C3%B3%C5%82ka%20Ro%C5%9Blin!5e0!3m2!1spl!2spl!4v1710000000000!5m2!1spl!2spl" 
-                width="100%" 
-                height="450" 
-                style="border:0;" 
-                allowfullscreen="" 
-                loading="lazy" 
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2538.0772718160456!2d16.8223629!3d50.6136682!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470e253109110d3d%3A0x4921ec39b0c9847c!2sStudniccy%20Szk%C3%B3%C5%82ka%20Ro%C5%9Blin!5e0!3m2!1spl!2spl!4v1710000000000!5m2!1spl!2spl"
+                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade">
-</iframe>
+            </iframe>
         </div>
     </section>
 
     <section class="about-section">
-    <div class="about-card-wrapper">
-        <div class="about-content">
-            <h2>Gospodarstwo Szkółkarskie Studniccy</h2>
-            <p class="lead-text">
-                Zapraszamy do kontaktu telefonicznego, mailowego oraz osobistej wizyty na terenie naszej szkółki. Chętnie doradzimy w wyborze odpowiednich roślin do Twojego ogrodu.
-            </p>
+        <div class="about-card-wrapper">
+            <div class="about-content">
+                <h2>Gospodarstwo Szkółkarskie Studniccy</h2>
+                <p class="lead-text">
+                    Zapraszamy do kontaktu telefonicznego, mailowego oraz osobistej wizyty na terenie naszej szkółki.
+                    Chętnie doradzimy w wyborze odpowiednich roślin do Twojego ogrodu.
+                </p>
 
-            <ul class="contact-list">
-                <li>
-                    <strong>Adres:</strong> Zwrócona 120, 57-200 Ząbkowice Śląskie
-                </li>
-                <li>
-                    <strong>Telefon:</strong> <a href="tel:+48607999797">+48 607 999 797</a>
-                </li>
-                <li>
-                    <strong>E-mail:</strong> <a href="mailto:studniccyszkolka@gmail.com">studniccyszkolka@gmail.com</a>
-                </li>
-            </ul>
+                <ul class="contact-list">
+                    <li>
+                        <strong>Adres:</strong> Zwrócona 120, 57-200 Ząbkowice Śląskie
+                    </li>
+                    <li>
+                        <strong>Telefon:</strong> <a href="tel:+48607999797">+48 607 999 797</a>
+                    </li>
+                    <li>
+                        <strong>E-mail:</strong> <a href="mailto:studniccyszkolka@gmail.com">studniccyszkolka@gmail.com</a>
+                    </li>
+                </ul>
 
-            <div class="opening-hours">
-                <h3>Godziny otwarcia</h3>
-                <p>Poniedziałek – Piątek: <strong>8:00 – 17:00</strong> | Sobota: <strong>8:00 – 14:00</strong></p>
+                <div class="opening-hours">
+                    <h3>Godziny otwarcia</h3>
+                    <p>Poniedziałek – Piątek: <strong>8:00 – 17:00</strong> | Sobota: <strong>8:00 – 14:00</strong></p>
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
     <section class="company-photo-section">
         <div class="company-photo-card">
@@ -83,19 +89,45 @@
     </footer>
 
     <script>
-    const burgerBtn = document.getElementById('burgerBtn');
-    const navLinks = document.getElementById('navLinks');
+        // 1. Obsługa menu burgera
+        const burgerBtn = document.getElementById('burger-btn');
+        const navLinks = document.getElementById('nav-links');
 
-    burgerBtn.addEventListener('click', () => {
-        navLinks.classList.toggle('active');
-    });
+        if (burgerBtn && navLinks) {
+            burgerBtn.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+            });
 
-    document.querySelectorAll('.nav-links a').forEach(link => {
-        link.addEventListener('click', () => {
-            navLinks.classList.remove('active');
-        });
-    });
-</script>
+            document.querySelectorAll('.nav-links a').forEach(link => {
+                link.addEventListener('click', () => {
+                    navLinks.classList.remove('active');
+                });
+            });
+        }
+
+        // 2. Obsługa Google Translate i przycisków PL / EN
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'pl',
+                includedLanguages: 'en,pl',
+                autoDisplay: false
+            }, 'google_translate_element');
+        }
+
+        function changeLanguage(langCode) {
+            const select = document.querySelector('.goog-te-combo');
+            if (select) {
+                select.value = langCode;
+                select.dispatchEvent(new Event('change'));
+
+                // Podświetlenie aktywnego przycisku
+                document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
+                document.getElementById('btn-' + langCode).classList.add('active');
+            }
+        }
+    </script>
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
 </body>
+
 </html>
