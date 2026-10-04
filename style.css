@@ -150,6 +150,11 @@ body {
     outline: none;
 }
 
+.goog-te-combo:hover {
+    background-color: #EBF4EC !important;
+    border-color: var(--primary-hover) !important;
+}
+
 .goog-te-banner-frame.skiptranslate {
     display: none !important;
 }
