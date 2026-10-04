@@ -25,9 +25,11 @@
             <a href="wysylka.html">Wysyłka</a>
             <a href="kontakt.html">Kontakt</a>
             <div class="lang-switch notranslate">
-    <button type="button" class="lang-btn active notranslate" id="btn-pl" onclick="changeLanguage('pl')">PL</button>
-    <button type="button" class="lang-btn notranslate" id="btn-en" onclick="changeLanguage('en')">EN</button>
-</div>
+                <button type="button" class="lang-btn active notranslate" id="btn-pl"
+                    onclick="changeLanguage('pl')">PL</button>
+                <button type="button" class="lang-btn notranslate" id="btn-en"
+                    onclick="changeLanguage('en')">EN</button>
+            </div>
             <div id="google_translate_element" style="display:none !important;"></div>
         </nav>
 
@@ -125,46 +127,60 @@
     <footer class="footer">
         <p>&copy; 2026 Gospodarstwo Szkółkarskie Studniccy. Wszelkie prawa zastrzeżone.</p>
     </footer>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+<script>
+    Fancybox.bind("[data-fancybox]", {});
 
-    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
-    <script>
-        Fancybox.bind("[data-fancybox]", {});
+    const burgerBtn = document.getElementById('burger-btn');
+    const navLinks = document.getElementById('nav-links');
 
-        const burgerBtn = document.getElementById('burger-btn');
-        const navLinks = document.getElementById('nav-links');
+    if (burgerBtn && navLinks) {
+        burgerBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
 
-        if (burgerBtn && navLinks) {
-            burgerBtn.addEventListener('click', () => {
-                navLinks.classList.toggle('active');
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
             });
+        });
+    }
 
-            document.querySelectorAll('.nav-links a').forEach(link => {
-                link.addEventListener('click', () => {
-                    navLinks.classList.remove('active');
-                });
-            });
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({
+            pageLanguage: 'pl',
+            includedLanguages: 'en,pl',
+            autoDisplay: false
+        }, 'google_translate_element');
+
+        const savedLang = localStorage.getItem('selectedLanguage');
+        if (savedLang) {
+            setTimeout(() => {
+                applyLanguage(savedLang);
+            }, 300);
         }
+    }
 
-        function googleTranslateElementInit() {
-            new google.translate.TranslateElement({
-                pageLanguage: 'pl',
-                includedLanguages: 'en,pl',
-                autoDisplay: false
-            }, 'google_translate_element');
-        }
+    function changeLanguage(langCode) {
+        localStorage.setItem('selectedLanguage', langCode);
+        applyLanguage(langCode);
+    }
 
-        function changeLanguage(langCode) {
-            const select = document.querySelector('.goog-te-combo');
-            if (select) {
-                select.value = langCode;
-                select.dispatchEvent(new Event('change'));
-                
-                document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
-                document.getElementById('btn-' + langCode).classList.add('active');
+    function applyLanguage(langCode) {
+        const select = document.querySelector('.goog-te-combo');
+        if (select) {
+            select.value = langCode;
+            select.dispatchEvent(new Event('change'));
+
+            document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
+            const activeBtn = document.getElementById('btn-' + langCode);
+            if (activeBtn) {
+                activeBtn.classList.add('active');
             }
         }
-    </script>
-    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-</body>
+    }
+</script>
+<script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    </body>
 
 </html>
